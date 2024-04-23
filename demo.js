@@ -32,12 +32,6 @@ Helper.log("Secret:", Config.getValue("secret"));
 Helper.log("Math:", Config.getValue("math_result"));
 Helper.log("Read this bots source code to see how to define and use config values.");
 
-if (Config.getValue("look_me_up")) {
-	var search_query = Config.getValue("search_engine_url") + "?q=" + encodeURI(Config.getValue("your_name"));
-	Browser.loadUrl(search_query);
-	Helper.log("By the way: I looked you up on the internet. Open the browser to see what I've found.");
-}
-
 if (Config.getValue("math_result") == 9 / 2) {
 	Helper.log("And your math was right, congratulations!");
 }
